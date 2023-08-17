@@ -1,0 +1,257 @@
+*{
+    margin: 0x;
+    padding: 0px;
+    font-family: 'Source Serif 4', serif;
+}
+.contains{
+    width: 100%;
+    height: 100vh;
+    /* 1vh=19.2px viewport height   maximum device height set aavan*/
+    background-color: white;
+    position: relative;
+    /* to make all child elements position to relative it */
+
+}
+.navbar{
+    display: flex;
+    /* side by side */
+    justify-content: space-between;
+    /* to create space between two childs */
+    width: 85%;
+    margin-left: 100px;
+    /* image move aayi */
+    align-items: center;
+    /*  oru div exact center kond veru(vertically) */
+}
+.logo{
+    width: 130px;
+}
+.item{
+    display: inline-block;
+    /* oru line display aavan */
+    list-style: none;
+    /* dot poovan vendi */
+    margin: 10px 20px;
+    /* gap veran (top,bootom,right,left) */
+}
+.links{
+    text-decoration: none;
+    /* link undeline poovan */
+    color: black;
+    font-weight: bold;
+
+}
+/* sudo class means oru place visit aaakambo property change aane(white color mouse pombo red aane) */
+/* tag:pseudo-class{property:value} */
+.links:hover{
+    color: red;
+}
+.title{
+    margin-left: 8%;
+    margin-top: 13%;
+}
+.h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+#name{
+    color: green;
+}
+.download{
+    text-decoration: none;
+    /* underline poypikan */
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    display: inline-block;
+    /* correct box aavan (link aaye kond work aavan)*/
+    margin-top: 30px;
+    border-radius: 8px;
+}
+.title-img{
+    width: 45%;
+    height: 70%;
+    position: absolute;
+    /* onninde mele bere veran */
+    right: 30px;
+    /* right poovan  */
+    bottom: 0px;
+    
+}
+.title-img img{
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    bottom: 0px;
+    /*(initially kodthe)left and bottom kodthe img left bottom kodthe sheesho scrol bannu */
+    transform: translateX(-50%);
+    /* x kodthe xside aaye konde (-50 kodthe left 50% kodthe kond)*/
+    transition:  left 2s , bottom 1s;
+    /* smoothness kittan */
+}
+.title-img:hover #shape{
+    bottom: 70px;
+    /* (hover ) kodthe mouse hover cheyambo move aavan */
+}
+.title-img:hover #girl{
+    left: 40%;
+    /* 40 kodkan karanam left 50 athinekaal korch value kodkano */
+}
+#about{
+    margin: 18% 8% 0px 8%;
+    /* mukallil title kodthe athe value kodthe beacuse same size veran (18 kodthe korch koodi thaye beran)*/
+}
+.heading{
+    text-align: center;
+
+}
+.heading h2{
+    font-size: 30px;
+    /* inspect copy aakiye */
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.heading span{
+    font-size: 20px;
+    color: green;
+}
+.about-content{
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    /* 1fr =255px */
+    /* grid means image and content 2 colums aaki maati */
+    gap: 2rem;
+    /* 1rem=16px */
+    margin-top: 3rem;
+}
+.about-img img{
+    width: 80%;
+    border-radius: 2rem;
+}
+.about-details{
+    font-size: 19px;
+    width: 400;
+    text-align: justify;
+    /* text start end oreee place aau */
+}
+.informations{
+    margin-top: 2rem;
+    /* paragrah and info gap beran */
+}
+.info-box{
+    margin-bottom: 1rem;
+    align-items: center;
+    display: flex;
+    /* flex means chile system work aavale ath kond kodthe(athin sheesho margin left kodthe) */
+    
+}
+.info-box span{
+    margin-left: 1rem;
+}
+#skills{
+    margin: 8% 8% 0px 8%;
+}
+.skill-content{
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr) ;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.skill-img img{
+    width: 90%;
+    padding-left: 4rem;
+}
+.class-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1 rem 0px;
+    margin-bottom: 1rem;
+    position: relative;
+}
+.base-bar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius:0.5rem ;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.base-html{
+    background-color: rgba(36, 236, 18, 0.884);
+    width: 95%;
+}
+.base-css{
+    background-color: rgba(36, 236, 18, 0.884);
+    width: 88%;
+}
+.base-react{
+    background-color: rgba(36, 236, 18, 0.884);
+    width: 89%;
+}
+.base-js{
+    background-color: rgba(36, 236, 18, 0.884);
+    width: 85%;
+}
+.icon-set{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+}
+.icon, .up-arrow {
+    width: 50px;
+    height: 50px;
+    /* border: 1px solid black;  */
+    /* ith kodkanda just ariyan kodthe */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 10px;
+
+}
+.icon i{
+    font-size: 30px;
+    color: black;
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right,yellow,red);
+}
+.icon:hover i{
+    color: white;
+    /* icon hover cheyyambo color maarne */
+    animation: shake 0.75s ;
+    /* nmae ndhu banakil kodka(shake)  infinite animation kodkandee*/
+}
+@keyframes shake{
+    10%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-15deg);
+    }
+    30%{
+        transform: rotate(15deg);
+    }
+    40%{
+        transform: rotate(-15deg);
+    }
+    /* (infinite )kodthal ath shake aayi kond nikkum . animation kodkande*/
+}
+.up-arrow{
+    float: right;
+    background-image: linear-gradient(to bottom right,yellow,red);
+    margin: 0px 10px 50px 0px;
+    
+}
+html{
+    scroll-behavior: smooth;
+    /* smoot aayi scroll cheyyan */
+}
+
